@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size:62.5%;
+}
+body{
+    width:100%;
+    height:120vh;
+}
+header{
+    height:3vh;
+    background-color: white;
+}
+h1{
+    font-size:4rem;
+}
+h2{
+    font-size:3rem;
+}
+h3{
+    font-size:2.5rem;
+    vertical-align: center;
+}
+p{
+    font-size:2rem;
+}
+header .logo{
+    display:flex;
+    width:40%;
+    height:100%;
+    margin:0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+}
+header h4,i{
+    font-size:2rem;
+    /* margin:0 0.4rem 0 0.4rem; */
+    align-self: center;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:155.5vh;
+}
+main .container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* height:25.875vh; */
+    background-color: lightcoral;
+    padding:3rem 1.5rem 1rem 1.5rem;
+    background-size: contain;
+    background-attachment: fixed;
+}
+main .container-subs{
+    background-image: url(./assets/pexels-sohail-nachiti-807598.jpg);
+    /* height:100%; */
+}
+main .headers *{
+    height:40%;
+    padding:1rem 0 1rem 0;
+    margin:1rem 0 1rem 0;
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content:start;
+
+}
+main .container-subs form{
+    width:70%;
+    height:40rem;
+    background-color: white;
+    opacity: 95%;
+    padding:1rem 2rem 1rem 2rem;
+    margin:1rem 1rem 1rem 1rem;
+    font-size:2.3em;
+    display:flex;
+    border:none;
+    flex-direction: column;
+    justify-content:space-around;
+}
+main .container-subs input{
+    width:100%;
+    height:4rem;
+    padding:1rem 1rem 1rem 1rem;
+    border:1px solid black;
+
+}
+main .container-subs button{
+    background-color: rgb(2, 139, 16);
+    color:white;
+    height:4rem;
+    font-size: 1em;
+    border:none;
+}
+main .container-learn{
+    background-color: white;
+    display:flex;
+    justify-content: center;
+    font-size:1.5rem;
+    height:100%;
+}
+main h2{
+    max-width: 50%;
+    text-align: center;
+}
+main h2:not(.container-about h2){
+    margin-bottom:3rem;
+    align-self: start;
+    margin-left:1rem; 
+}
+main .container-subs h1~h3,h1{
+    text-align:left;
+    padding:0.4rem 0.4rem 1rem 1rem;
+    width:fit-content;
+    display:grid;
+    place-items: center;
+    text-align-last: start  ;
+
+}
+.images{
+    
+    background-size:cover;
+    background-position: center;
+    margin:1rem;
+    height:7rem;
+    width:7rem;
+    border-radius: 100%;
+    border:none;
+}
+.img-rec{
+    border-radius: 100%;
+    border:none;
+}
+main .container-about{
+    background-image: repeating-radial-gradient( rgb(2, 139, 16),rgb(160, 252, 172),rgb(16, 87, 0));
+    display:flex;
+    height:100%;
+    font-size: 1.5rem;
+    justify-content:center;
+    align-items: center;
+    align-content: center;
+}
+main .container-about p{
+    text-align: center;
+    margin-top:2.5rem;
+}
+main .container-recs{
+    background-color: white;
+    display:flex;
+    text-align:center;
+    flex-direction: column;
+    height:100vh;
+}
+main .container-recs h3{
+    align-self:center;
+}
+main .item{
+    width:100%;
+    height:auto;
+    font-size:2rem;
+    display:flex;
+    justify-content: center;
+}
+main .user{
+    display:flex;
+    flex-direction: row;
+    font-size:1.5rem;
+    margin:1rem;
+    padding:1rem;
+}
+footer{
+    display:flex;
+    flex-direction: row;
+    /* align-items: center; */
+    height:3vh;
+    font-size: 2rem;
+    width:100%;
+    margin:10rem 0 0 0;
+    padding:1rem;
+    position:fixed;
+    bottom:0;
+    opacity: 100%;
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+footer div{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div+div{
+    position: absolute;
+    right:1rem;  
+}
+/* 
+@media only screen and(max-width: 600px) {
+
+}
+@media only screen and(min-width: 600px) {
+    
+}
+@media only screen and (max-width: 1200px){
+
+}
+  */
+@media only screen and(min-width: 768px) {
+    main{
+        font-size:1rem;
+    }
+    main .container-subs{
+        flex-direction:row;
+        font-size:1rem;
+    }
+    main .user{
+        flex-direction: column;
+    }
+}
