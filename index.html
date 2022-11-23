@@ -9,27 +9,52 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./style.css">
     <title>Homepage</title>
+    
 </head>
 
-<body>
+<body class="light">
+  <nav class="navbar21">
+    <ul class="navbar-nav21">
+      <li class="nav-item">Home</li>
+      <li class="nav-item">About</li>
+
+      <li class="nav-item has-dropdown">
+          <a href="#">Theme</a>
+          <ul class="dropdown">
+            <li class="dropdown-item">
+              <a id="light" href="#">light</a>
+            </li>
+            <li class="dropdown-item">
+              <a id="dark" href="#">dark</a>
+            </li>
+            <li class="dropdown-item">
+              <a id="solar" href="#">solarize</a>
+            </li>
+          </ul>
+        </li>
+      <li class="nav-item">Login</li>
+    </ul>
+  </nav>
     <!-- Top part with Logo at the side -->
     <header class="container py-2 mb-3">
-        <div class="d-flex flex-column flex-md-row py-2 mx-2 border-bottom">
+        <div class="container d-flex flex-column flex-md-row py-2 mx-2 border-bottom justify-content-center">
           <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
               <i class="fa-solid fa-cloud"></i>
               <span class="fs-4">Your Logo</span>
           </a>  
         </div>
     </header>
-
+    
+      <div class="headline">
+        <div class="headline-bg"></div> 
+        <h2>Welcome to our brand <mark class="logo">NEW</mark> website!</h2>
+        <h4>Your  intriguing call to action goes here lorem hipsum dolor dourcht...</h4>
+        <p class="fs-5 text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, doloremque. A laudantium facilis expedita fugit amet corporis totam asperiores tempora! Eum, molestiae. Suscipit sit, et odio incidunt rem commodi iure.<br><br>
+        <p id="fadegraph" class="fs-5 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia soluta, maxime molestiae tenetur hic iure similique laborum quasi animi quos fugit beatae enim optio mollitia at praesentium a voluptate.</p></p>
+      </div>
     <!-- Below the header until the recommends slider -->
     <div class="container p-3 pb-md-5 mx-auto text-center">
-          <h2 class="display-4 fw-normal lh-lg">Welcome to our brand <mark>NEW</mark> website!</h2>
-          <h4 class="fs-5 text-muted">Your  intriguing call to action goes here lorem hipsum dolor dourcht...</h4>
-      <p class="fs-5 text-muted">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, doloremque. A laudantium facilis expedita fugit amet corporis totam asperiores tempora! Eum, molestiae. Suscipit sit, et odio incidunt rem commodi iure.<br><br>
-          <p id="fadegraph" class="fs-5 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore quia soluta, maxime molestiae tenetur hic iure similique laborum quasi animi quos fugit beatae enim optio mollitia at praesentium a voluptate.</p>
-      </p>
+
       <div class="col-md-12 col-lg-12 ">
         <form class="needs-validation" action="" method="post" novalidate>
           
@@ -57,7 +82,7 @@
                         </div>
                     </div>
                     <div class="col-md">
-                        <button class="w-100 btn btn-primary btn-md" type="submit">Get Free Quote</button>
+                        <button class="logo w-100 btn btn-secondary btn-md" type="submit">Get Free Quote</button>
                   </div>
                   <div class="col-md-4 text-center">
                       <span class="text-muted text-center">your privacy is importent,we will not share your information</span>
@@ -184,5 +209,6 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
